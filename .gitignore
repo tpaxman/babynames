@@ -301,3 +301,4 @@ vignettes/*.pdf
 output/
 .idea/
 *.exe
+*.Rproj
