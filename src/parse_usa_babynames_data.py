@@ -11,5 +11,3 @@ for f in Path('output').glob('*.html'):
     df = df[~df['Rank'].str.startswith('Note')]
     df.to_csv(f.with_suffix('.csv'), index=False)
 
-
-#tables = [pd.read_html(str(f))[2].assign(year=f.stem) for f in Path('output').glob('*.html')]
