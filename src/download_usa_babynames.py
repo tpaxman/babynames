@@ -1,3 +1,7 @@
+"""
+Downloads the top 1000 baby names data from ssa.gov for 1880-2019
+Outputs each data table as a raw html file
+"""
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from time import sleep
