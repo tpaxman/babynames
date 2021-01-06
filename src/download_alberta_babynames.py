@@ -4,7 +4,8 @@ import pandas as pd
 import requests
 import openpyxl
 
-URL = 'https://open.alberta.ca/dataset/11245675-b047-49fc-8bd1-cc2ce8314a6d/resource/e8aac308-c754-484c-b446-0c57ed0e8d37/download/baby-names-frequency.xlsx'
+URL = ('https://open.alberta.ca/dataset/11245675-b047-49fc-8bd1-cc2ce8314a6d/resource/'
+       'e8aac308-c754-484c-b446-0c57ed0e8d37/download/baby-names-frequency.xlsx')
 r = requests.get(URL)
 with io.BytesIO(r.content) as f:
     wb = openpyxl.load_workbook(f)
