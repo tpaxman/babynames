@@ -3,9 +3,11 @@
 
 
 
-clean-data/usa-state-babynames.csv
-clean-data/usa-country-babynames.csv
-clean-data/alberta-babynames.csv
+clean-data/alberta-babynames.csv : src/clean_alberta_babynames.py downloads/alberta-babynames.xlsx
+	python $^ $@
+
+#clean-data/usa-country-babynames.csv
+#clean-data/alberta-babynames.csv
 
 
 rawdata :
